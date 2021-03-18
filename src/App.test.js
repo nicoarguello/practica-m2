@@ -7,11 +7,11 @@ import { Router } from "react-router-dom";
 
 import "@testing-library/jest-dom/extend-expect";
 
-import { App, LocationDisplay } from "./app";
+/* import { App, LocationDisplay } from "./app"; */
 
 test("renders Navbar", () => {
   render(<App />);
-  const linkElement = screen.ByTestId("nav");
+  const linkElement = screen.getByTestId("nav");
   expect(linkElement).toBeInTheDocument();
 });
 
